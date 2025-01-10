@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SPARQL_diplomatiki
+</name>
+</assembly>
+<members>
+<member name="T:SPARQL_diplomatiki.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SPARQL_diplomatiki.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SPARQL_diplomatiki.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.EnsureSettingsFileExists">
+ <summary>
+ Ελέγχει αν το αρχείο ρυθμίσεων υπάρχει.
+ Αν δεν υπάρχει, το δημιουργεί με προεπιλεγμένες ρυθμίσεις.
+ </summary>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.LoadSettings">
+ <summary>
+ Φορτώνει τις ρυθμίσεις από το αρχείο JSON.
+ </summary>
+ <returns>Ένα Dictionary με τις ρυθμίσεις.</returns>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.SaveSettings(System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ Αποθηκεύει τις ρυθμίσεις στο αρχείο JSON.
+ </summary>
+ <param name="settings">Ένα Dictionary με τις ρυθμίσεις που θα αποθηκευτούν.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.AddToList(System.String,System.String)">
+ <summary>
+ Προσθέτει ένα στοιχείο σε μια λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="key">Το κλειδί της λίστας.</param>
+ <param name="value">Η τιμή που θα προστεθεί.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.RemoveFromList(System.String,System.String)">
+ <summary>
+ Αφαιρεί ένα στοιχείο από μια λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="key">Το κλειδί της λίστας.</param>
+ <param name="value">Η τιμή που θα αφαιρεθεί.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.LoadComboBoxFromList(System.Windows.Forms.ComboBox,System.String)">
+ <summary>
+ Φορτώνει μια λίστα από το αρχείο ρυθμίσεων και την προσθέτει σε ComboBox.
+ </summary>
+ <param name="cmb">Το ComboBox στο οποίο θα προστεθούν οι τιμές.</param>
+ <param name="key">Το κλειδί της λίστας.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.SaveSelectedComboBoxValue(System.Windows.Forms.ComboBox,System.String)">
+ <summary>
+ Αποθηκεύει την επιλεγμένη τιμή από ένα ComboBox σε λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="cmb">Το ComboBox από το οποίο θα αποθηκευτεί η τιμή.</param>
+ <param name="key">Το κλειδί της λίστας.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.GetSettingsFilePath">
+ <summary>
+ Επιστρέφει τη διαδρομή του αρχείου ρυθμίσεων.
+ </summary>
+ <returns>Η διαδρομή του αρχείου.</returns>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.IsValueInList(System.String,System.String)">
+ <summary>
+ Ελέγχει αν ένα στοιχείο υπάρχει ήδη σε μια λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="listName">Το όνομα της λίστας.</param>
+ <param name="value">Η τιμή που θα ελεγχθεί.</param>
+ <returns>True αν υπάρχει, αλλιώς False.</returns>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.AddToListGeneric(System.String,System.String)">
+ <summary>
+ Προσθέτει ένα στοιχείο σε μια λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="listName">Το όνομα της λίστας.</param>
+ <param name="value">Η τιμή που θα προστεθεί.</param>
+</member>
+<member name="M:SPARQL_diplomatiki.JsonSettingsManager.RemoveFromListGeneric(System.String,System.String)">
+ <summary>
+ Διαγράφει ένα στοιχείο από μια λίστα στο αρχείο ρυθμίσεων.
+ </summary>
+ <param name="listName">Το όνομα της λίστας.</param>
+ <param name="value">Η τιμή που θα διαγραφεί.</param>
+</member>
+</members>
+</doc>
