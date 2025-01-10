@@ -1,0 +1,75 @@
+
+
+SELECT  ?c1 
+WHERE {
+    GRAPH <http://localhost:8890/DAV/> { ?c1 a <http://www.openlinksw.com/schemas/VSPX#> . }
+} ###
+
+
+SELECT  ?c1 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+} ###
+
+
+
+SELECT  ?c1 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+} ###
+
+
+SELECT  ?c1 ?o 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+    ?c1 <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+} ###
+
+
+SELECT  ?c1 ?o 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+    ?c1 <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+} ###
+
+
+SELECT  ?c1 ?o 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+    ?c1 <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+} ###
+
+
+
+SELECT  ?c1 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+    ?c1 <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+} ###
+
+
+SELECT  ?c1   (COUNT(?o) AS ?oCOUNT)
+
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#CheckTag> . }
+    ?c1 ?p ?o.
+}   GROUP BY  ?c1###
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?dbpedia_id ?label
+WHERE {
+   <https://dblp.org/pid/140/1483> rdfs:label ?label .
+   SERVICE <https://dbpedia.org/sparql> {
+        ?dbpedia_id a dbpedia-owl:Person ;
+                    foaf:name ?label .
+   }
+}###
+
+
+SELECT  ?c1 ?ο 
+WHERE {
+     { ?c1 a <http://id.nlm.nih.gov/mesh/vocab#Concept> . }
+    ?c1 <http://www.w3.org/2000/01/rdf-schema#label> ?ο.
+} ###

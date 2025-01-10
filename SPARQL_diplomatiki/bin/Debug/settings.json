@@ -1,0 +1,11 @@
+{
+  "EndPoints": [
+    "https://dbpedia.org/sparql",
+    "https://id.nlm.nih.gov/mesh/sparql",
+    "http://linkedgeodata.org/sparql"
+  ],
+  "DataSources": [
+    "default",
+    "https://dbpedia.org/sparql"
+  ]
+}
